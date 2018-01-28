@@ -40,7 +40,7 @@ class CollectMineralShards2dEnv(BaseMovement2dEnv):
 
 class CollectMineralShardsGroupsEnv(BaseMovement2dEnv):
     def __init__(self, **kwargs):
-        super().__init__(map_name=_MAP_NAME, step_mul=2, **kwargs)
+        super().__init__(map_name=_MAP_NAME, step_mul=8, **kwargs)
 
     def _post_reset(self):
         obs = self._init_control_groups()
